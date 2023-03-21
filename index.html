@@ -18,10 +18,13 @@
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
-                     gps-entity-place="latitude: 48.244233; longitude: 16.378268;" 
+                    gps-entity-place="latitude: 48.244233; longitude: 16.378268;" 
                 ></a-image>
 
+
             <a-camera gps-camera rotation-reader></a-camera>
+            <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 5'> </a-camera>
+
         </a-scene>
     </body>
 </html>
